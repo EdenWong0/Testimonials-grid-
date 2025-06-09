@@ -74,8 +74,12 @@ p {
 /** Card style **/
 .testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
+  grid-template-areas:
+    "purple purple gray"
+    "light dark-gray kira";
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  gap: 2rem;
   padding: 2rem;
 }
 
