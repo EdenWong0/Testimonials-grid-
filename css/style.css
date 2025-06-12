@@ -38,7 +38,7 @@ html {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 4em 2em;
+  padding: 4em 1.5em;
 }
 
 h2 {
@@ -165,7 +165,7 @@ p {
   border-radius: 10px;
   padding: 1.5rem;
   width: 100%;
-  max-width: 70%; /* adjust this value as needed */
+  max-width: 70%;
   box-shadow: 11px 20px 20px 14px rgba(0, 0, 0, 0.2);
 }
 
@@ -190,6 +190,9 @@ p {
   .lower-section {
     display: grid;
   }
+  .testimonials {
+    gap: 0;
+  }
 
   .upper-section .daniel,
   .lower-section .patick,
@@ -197,7 +200,8 @@ p {
   .lower-section .jeanette {
     flex: 100%;
   }
-  .card.light {
+  .card.light,
+  .card.dark-gray {
     max-width: 100%;
     width: auto;
   }
