@@ -23,7 +23,6 @@
 
 body,
 html {
-  line-height: 1.2;
   width: 100%;
   height: 100%;
   box-sizing: border-box;
@@ -31,7 +30,7 @@ html {
   background: var(--neutral-color-100);
   max-width: 1150px;
   margin: 0 auto;
-  line-height: 1.3;
+  line-height: 1.2;
 }
 
 .wrapper {
@@ -39,7 +38,7 @@ html {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 1em;
+  padding: 4em 2em;
 }
 
 h2 {
@@ -98,7 +97,7 @@ p {
   margin-bottom: 1.5em;
   display: flex;
   justify-content: center;
-  gap: 1.5em;
+  gap: 2em;
 }
 
 .upper-section .daniel,
@@ -172,7 +171,7 @@ p {
 .card.purple {
   background: var(--primary-color-500);
   border-radius: 10px;
-  padding: 1.5em;
+  padding: 1.5rem;
   width: 100%;
   box-shadow: 11px 20px 20px 14px rgba(0, 0, 0, 0.2);
 }
@@ -181,7 +180,7 @@ p {
   .testimonials,
   .upper-section,
   .lower-section {
-    display: block;
+    display: grid;
   }
 
   .upper-section .daniel,
@@ -189,5 +188,26 @@ p {
   .upper-section .jonathan,
   .lower-section .jeanette {
     flex: 100%;
+  }
+  .card.light {
+    max-width: 100%;
+    width: auto;
+  }
+  .card.light.kira {
+    min-height: auto;
+  }
+  .card.purple,
+  .card.gray,
+  .card.dark-gray {
+    width: auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .wrapper {
+    padding: 4em 1.5em;
+  }
+  .card {
+    padding: 2rem !important;
   }
 }
