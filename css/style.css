@@ -41,6 +41,10 @@ html {
   padding: 4em 1.5em;
 }
 
+h1 {
+  display: none;
+}
+
 h2 {
   font-size: 20px;
   font-weight: 500;
