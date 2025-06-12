@@ -149,7 +149,7 @@ p {
 }
 
 .card.light.kira {
-  min-height: 550px;
+  min-height: 530px;
 }
 /** Card Gray background**/
 .card.gray {
@@ -163,17 +163,25 @@ p {
 .card.dark-gray {
   background: var(--neutral-color-500);
   border-radius: 10px;
-  padding: 1.5em;
-  width: 100%;
-  box-shadow: 11px 20px 20px 14px rgba(0, 0, 0, 0.2);
-}
-/** Card Purple background**/
-.card.purple {
-  background: var(--primary-color-500);
-  border-radius: 10px;
   padding: 1.5rem;
   width: 100%;
+  max-width: 70%; /* adjust this value as needed */
   box-shadow: 11px 20px 20px 14px rgba(0, 0, 0, 0.2);
+}
+
+/** Card Purple background**/
+.card.purple {
+  background-color: var(--primary-color-500);
+  background-image: url("../images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: top right 5rem;
+  background-size: 100px;
+  border-radius: 10px;
+  padding: 2rem 2.5rem;
+  width: 100%;
+  box-shadow: 11px 20px 20px 14px rgba(0, 0, 0, 0.2);
+  position: relative;
+  color: white;
 }
 
 @media (max-width: 991px) {
