@@ -31,6 +31,7 @@ html {
   max-width: 1140px;
   margin: 0 auto;
   line-height: 1.2;
+  overflow: hidden;
 }
 
 .wrapper {
@@ -39,10 +40,6 @@ html {
   align-items: center;
   min-height: 100vh;
   padding: 4em 1.5em;
-}
-
-h1 {
-  display: none;
 }
 
 h2 {
@@ -55,27 +52,37 @@ p {
   font-weight: 400;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 /** Testimonial  **/
-.card.light .testimonial-avator .avator-info .name,
+.card.light .testimonial-avatar .avatar-info .name,
 .card.light .headline {
   color: var(--neutral-color-500);
 }
-.card.light .testimonial-avator .avator-info .title,
+.card.light .testimonial-avatar .avatar-info .title,
 .card.light .quote {
   color: var(--neutral-color-400);
 }
 
-.card.dark-gray .testimonial-avator .avator-info .name,
-.card.purple .testimonial-avator .avator-info .name,
-.card.gray .testimonial-avator .avator-info .name,
+.card.dark-gray .testimonial-avatar .avatar-info .name,
+.card.purple .testimonial-avatar .avatar-info .name,
+.card.gray .testimonial-avatar .avatar-info .name,
 .card.dark-gray .headline,
 .card.purple .headline,
 .card.gray .headline {
   color: var(--white);
 }
-.card.dark-gray .testimonial-avator .avator-info .title,
-.card.purple .testimonial-avator .avator-info .title,
-.card.gray .testimonial-avator .avator-info .title,
+.card.dark-gray .testimonial-avatar .avatar-info .title,
+.card.purple .testimonial-avatar .avatar-info .title,
+.card.gray .testimonial-avatar .avatar-info .title,
 .card.dark-gray .quote,
 .card.purple .quote,
 .card.gray .quote {
@@ -105,7 +112,7 @@ p {
 }
 
 .upper-section .daniel,
-.lower-section .patick {
+.lower-section .patrick {
   flex: 70%;
 }
 
@@ -114,25 +121,25 @@ p {
   flex: 30%;
 }
 
-.card .testimonial-avator {
+.card .testimonial-avatar {
   display: flex;
   align-items: center;
   gap: 1em;
   margin-bottom: 1em;
 }
 
-.card .testimonial-avator .avator-info {
+.card .testimonial-avatar .avatar-info {
   display: grid;
   align-items: center;
   gap: 0.2rem;
 }
-.card .testimonial-avator .avator-info .name {
+.card .testimonial-avatar .avatar-info .name {
   font-size: 15px;
 }
-.card .testimonial-avator .avator-info .title {
+.card .testimonial-avatar .avatar-info .title {
   font-size: 12px;
 }
-.card .testimonial-avator img {
+.card .testimonial-avatar img {
   border-radius: 50%;
   width: 30px;
   height: 30px;
