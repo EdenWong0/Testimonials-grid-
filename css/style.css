@@ -40,6 +40,7 @@ html {
   align-items: center;
   min-height: 100vh;
   padding: 4em 1.5em;
+  visibility: hidden;
 }
 
 h2 {
